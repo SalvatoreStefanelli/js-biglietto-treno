@@ -6,13 +6,17 @@ const age = prompt('Quanti anni hai?');
 const priceKm = 0.21;
 
 const price = priceKm * chilometers;
-
 console.log(price);
 
-// if (age < 18) {
+const saleYoung = (price * 20) / 100;
+
+const priceYoung = price - saleYoung;
+ 
+ if (age < 18) {
    
-//     (price - 20%);
-// }
+   console.log(priceYoung);
+}
+
 
 // if (age > 65) { 
     
