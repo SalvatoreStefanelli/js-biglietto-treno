@@ -36,3 +36,7 @@ if (age < 18) {
     document.getElementById('total_price').innerHTML = price;
 }
 
+const priceTicket = price || priceYoung || priceSenior;
+
+//const priceTicket = Math.round(6);
+
