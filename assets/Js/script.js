@@ -8,12 +8,10 @@ const age = prompt('Quanti anni hai?');
 // costo del biglietto
 const priceKm = 0.21;
 const price = priceKm * chilometers;
-console.log(price);
 
 // sconto per i minorenni
 const saleYoung = (price * 20) / 100;
 const priceYoung = price - saleYoung;
-const priceYoung = Math.round(2.5);
 
 // sconto per gli over 65
 const saleSenior = (price * 40) / 100;
@@ -21,11 +19,20 @@ const priceSenior = price - saleSenior;
 
 // Calcolo del prezzo del biglietto scontato per i minorenni
 if (age < 18) {
-   
-   console.log(priceYoung);
-
+    
+    console.log(priceYoung);
+    document.getElementById('total_price').innerHTML = priceYoung;
+    
 // Calcolo del prezzo del biglietto scontato per gli over 65
 } else if (age > 65) {
-
+    
     console.log(priceSenior);
+    document.getElementById('total_price').innerHTML = priceSenior;
+
+// Calcolo del prezzo del biglietto tra i 18 e i 65 anni
+} else {
+    
+    console.log(price);
+    document.getElementById('total_price').innerHTML = price;
 }
+
