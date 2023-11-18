@@ -1,13 +1,13 @@
 const chilometers = prompt('Quanti km vuoi percorrere?');
-console.log('chilometers');
+console.log(chilometers);
 
-// const age = prompt('Quanti anni hai?');
+const age = prompt('Quanti anni hai?');
 
-// const priceKm = 0.21;
+const priceKm = 0.21;
 
-// const price = priceKm * chilometers;
+const price = priceKm * chilometers;
 
-// console.log('price');
+console.log(price);
 
 // if (age < 18) {
    
